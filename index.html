@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>異体文字ミキサー</title>
+
+</head>
+
+<body>
+  <header>
+    
+    <h1>異体⽂字ミキサー</h1>
+
+  </header>
+
+  <!-- <p>普通の文字を、形の似た文字や違う文字コードの文字に変換して混ぜこんでしまいます。実用性はありません。悪用厳禁です。</p> -->
+
+<!-- 異体文字バージョン -->
+  <p>さまざまな⽂字を、形の似ている⽂字や違う⽂字コードの⽂字に変換して混ぜこんでしまいます。実⽤性はありません。悪⽤厳禁です。</p>
+
+  <p>
+    <form id = "radiobutton">
+    ■どの文字を変換する？
+    <br><input type = "radio" name = "mojilevel" value = "level1">　初級：わかりやすい異体文字のみ変換
+    <br><input type = "radio" name = "mojilevel" value = "level2" checked>　中級：わかりやすい異体文字＋よく見ればわかる異体文字を変換
+    <br><input type = "radio" name = "mojilevel" value = "level3">　上級：よく見ればわかる異体文字のみを変換
+    <br><input type = "radio" name = "mojilevel" value = "level4">　最上級：よく見ればわかる異体文字＋見ただけではわからない異体文字を変換
+
+    <br><br>■異体文字を表示する？<br>
+    <input type = "radio" name = "redhyouji" value = "redder" checked>赤色で表示する
+    <input type = "radio" name = "redhyouji" value = "nored" >表示しない<br>
+    </form>
+
+    <!-- <button id="checkButton">表示更新</button> -->
+
+    <p>
+    <textarea id="input" placeholder="テキストを入力してください。リアルタイムで変換して表示します。"></textarea>
+    <br>
+
+    <button id="clearButton">テキストをクリアする</button>
+  </p>
+
+  <p id="output"></p>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
