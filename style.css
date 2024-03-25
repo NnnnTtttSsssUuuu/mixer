@@ -9,7 +9,7 @@ body {
 
 h1 {
   margin: 0;
-  padding: 10px 1em 20px 1em;
+  padding: 10px .5em 20px .5em;
   line-height: 1em;
   font-feature-settings: "palt" ;
 }
