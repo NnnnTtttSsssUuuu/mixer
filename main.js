@@ -14,9 +14,18 @@
 
   // document.querySelector('#checkButton').addEventListener('click', () => { changeCharacter() });
 
-  document.querySelector('#radiobutton').addEventListener('change', () => { changeCharacter() });
+  document.querySelector('#radiobutton').addEventListener('change',changeCharacter);
 
-  document.querySelector('#input').addEventListener('keyup', () => { changeCharacter() });
+  let tid;
+  delay = 200;
+
+  document.querySelector('#input').addEventListener('keyup',function(){
+    tid && clearTimeout(tid);
+    tid = setTimeout(changeCharacter, delay);
+  });
+
+
+
 
   function changeCharacter() {
 
